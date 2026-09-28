@@ -1,0 +1,6 @@
+# Archivos del sistema Mac
+.DS_Store
+
+# Caché y compilados de Python
+__pycache__/
+*.pyc
