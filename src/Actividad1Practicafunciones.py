@@ -8,7 +8,7 @@ columnas_eph = {
     "EDAD": {"tipo": "int", "completitud": 100.0},
     "REGION": {"tipo": "int", "completitud": 100.0},
     "AGLOMERADO": {"tipo": "int", "completitud": 100.0},
-    "MAS_500": {"tipo": "string", "completitud": 100.0},
+    "MAS_500": {"tipo": "bool", "completitud": 100.0},
     "ANO4": {"tipo": "int", "completitud": 100.0},
     "TRIMESTRE": {"tipo": "int", "completitud": 100.0},
     "ITF": {"tipo": "int", "completitud": 88.2},
@@ -30,7 +30,17 @@ tipos_roles = {
         "completitud_minima": 80.0,
     },
     "analista": {
-        "columnas_de_interes": ("MAS_500", "TRIMESTRE", "ITF"),
+        "columnas_de_interes": (
+            "ESTADO",
+            "CAT_OCUP",
+            "EDAD",
+            "REGION",
+            "AGLOMERADO",
+            "MAS_500",
+            "TRIMESTRE",
+            "ITF",
+            "GDECCFR",
+        ),
         "criterio": "completitud",
         "forma": "A",  # A: ascendente
         "completitud_minima": None,  # opcional: no tiene umbral
